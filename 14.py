@@ -109,7 +109,7 @@ key = {}
 for i in data:
 	key[i[0][0]+i[0][1]] = [i[0][0]+i[1],i[1]+i[0][1]]
 
-last = polymer[-2:]
+last = polymer[-1]
 
 basesets = {}
 for i in data:
@@ -122,7 +122,6 @@ for i,v in enumerate(polymer):
 polymer = newpolymer
 
 for step in range(40):
-	last = key[last][1]
 	newpolymer = copy.copy(basesets)
 	for i in polymer:
 		newpolymer[key[i][0]]+=polymer[i]
@@ -134,7 +133,7 @@ for i in polymer:
 	if i[0] not in elements:
 		elements[i[0]] = 0
 	elements[i[0]]+=polymer[i]
-elements[last[-1]]+=1
+elements[last]+=1
 highest = 0
 lowest = sum([polymer[i] for i in polymer])
 for i in elements:
