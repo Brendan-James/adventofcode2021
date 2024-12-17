@@ -1,7 +1,7 @@
 import copy
 import heapq
 
-troughs = [[3,2],[0,2],[1,1],[0,3]]
+troughs = ["my input where ABCD = 0123 and amphipods are listed from the bottom to the top"]
 
 
 hallway = [-1,-1,-1,-1,-1,-1,-1]
@@ -56,7 +56,7 @@ while part == "a":
 					added[f"{score+(distance[i][j]+2-len(v))*10**v[-1]}{newtroughs}{newhallway}"]=True
 					heapq.heappush(todo,(score+(distance[i][j]+2-len(v))*10**v[-1],newtroughs,newhallway))
 
-troughs = [[3,3,3,2],[0,1,2,2],[1,0,1,1],[0,2,0,3]]
+troughs = ["my input where ABCD = 0123 and amphipods are listed from the bottom to the top"]
 
 todo = [(0,troughs,hallway)]
 done = []
