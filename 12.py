@@ -1,29 +1,5 @@
 import copy
-data = """fw-ll
-end-dy
-tx-fw
-tx-tr
-dy-jb
-ZD-dy
-dy-BL
-dy-tr
-dy-KX
-KX-start
-KX-tx
-fw-ZD
-tr-end
-fw-jb
-fw-yi
-ZD-nr
-start-fw
-tx-ll
-ll-jb
-yi-jb
-yi-ll
-yi-start
-ZD-end
-ZD-jb
-tx-ZD""".split("\n")
+data = """my input""".split("\n")
 data = [i.split("-") for i in data]
 
 def doublesearch(node,visited,doublevisited):
