@@ -1,5 +1,5 @@
-p1 = 8
-p2 = 7
+p1 = "my input pt 1"
+p2 = "my input pt 2"
 
 p1score = 0
 p2score = 0
@@ -41,7 +41,7 @@ while True:
 		print("a:",p1score*rolls)
 		break
 
-scores = {"0,0,8,7":1}
+scores = {"0,0,my input pt 1,my input pt 2":1}
 p1wins = 0
 p2wins = 0
 step = 0
